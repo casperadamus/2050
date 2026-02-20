@@ -52,11 +52,28 @@ class LinkedList:
 ListNode class
 
 ```python
-class Listnode:
-  def __init__(self, data, link=None):
-    self.data = data
+class ListNode:
+  def __init__(self, data, link=None, prev = None):
+     self.data = data
     self.prev = prev
     self.link = link
+
+    if prev is not None:
+      prev.link = self
+
+    if link is not None:
+      link.prev = self
+
+  def deletenode(node):
+    node.data = node.link.data
+    nide.link = node.link.link
+
+  def i dont know():
+
+
+   
+
+
 
   
 
